@@ -1,5 +1,8 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        MorseEncoder encoder = new MorseEncoder();
+
+        System.out.println(encoder.toMorse("Hello world"));
+        System.out.println(encoder.decode(".... . .-.. .-.. --- / .-- --- .-. .-.. -.. "));
     }
 }
