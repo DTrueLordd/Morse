@@ -7,11 +7,11 @@ public class MorseEncoder {
     private final Map<String, Character> reverseMorseAlphabet = new HashMap<>();
 
 
-    private final String[] morseCode = {".-", "-...", "-.-.", "-..", ".", "..-.", "--.", "....",
+    private final static String[] morseCode = {".-", "-...", "-.-.", "-..", ".", "..-.", "--.", "....",
             "..", ".---", "-.-", ".-..", "--", "-.", "---", ".--.", "--.-", ".-.", "...", "-",
             "..-", "...-", ".--", "-..-", "-.--", "--..",
     };
-    private final String[] morseNums =
+    private final static String[] morseNums =
             {"-----", ".----", "..---",
             "...--", "....-", ".....",
             "-....","--...","---..", "----."};

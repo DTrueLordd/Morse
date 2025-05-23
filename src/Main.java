@@ -1,8 +1,12 @@
-public class Main {
-    public static void main(String[] args) {
-        MorseEncoder encoder = new MorseEncoder();
+import javax.sound.midi.InvalidMidiDataException;
+import javax.sound.sampled.LineUnavailableException;
 
-        System.out.println(encoder.toMorse("Hello world"));
-        System.out.println(encoder.decode(".... . .-.. .-.. --- / .-- --- .-. .-.. -.. "));
+public class Main {
+    public static void main(String[] args) throws LineUnavailableException {
+        StringToSoundConverter converter = new StringToSoundConverter(new MorseEncoder(), new SoundGenerator());
+        converter.StringToSound("sos");
+
+
+
     }
 }
