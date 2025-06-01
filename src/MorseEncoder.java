@@ -50,8 +50,8 @@ public class MorseEncoder {
    public  String decode(String str){
        StringBuilder sb = new StringBuilder();
        String[] arr = str.split(" ");
-       for (int i = 0; i< arr.length; i++ ) {
-           sb.append(reverseMorseAlphabet.get(arr[i]));
+       for (String s : arr) {
+           sb.append(reverseMorseAlphabet.get(s));
        }
 
        return sb.toString();
